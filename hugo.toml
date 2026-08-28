@@ -1,3 +1,27 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://b147610026-cmd.github.io/'
+languageCode = 'zh-tw'
+title = '個人生活與成長紀錄'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = true
+
+[params]
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  
+  [params.homeInfoParams]
+    Title = "👋 歡迎來到我的個人空間"
+    Content = "這裡記錄著我的日常生活、學習心得、運動突破與閱讀收穫。"
+
+[menu]
+  [[menu.main]]
+    name = "文章歸檔"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "標籤"
+    url = "/tags/"
+    weight = 20
